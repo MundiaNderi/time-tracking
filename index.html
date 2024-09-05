@@ -10,37 +10,194 @@
       rel="stylesheet"
     />
     <link href="/src/output.css" rel="stylesheet" />
-    <title>Time tracking dashboard</title>
+    <title>Time Tracking Dashboard</title>
   </head>
-
-  <body>
-    <div class="my-16 mx-8 md:my-40 md:mx-20 grid grid-rows-7 md:grid-cols-4">
-      <!--Persons-->
-      <div class="grid grid-cols-1 rounded-md">
+  <body
+    class="flex items-center min-h-screen border border-green-500 justify-center"
+  >
+    <!--Main Container-->
+    <div
+      class="flex flex-col md:flex-row justify-center border border-red-500 gap-8 my-16 md:my-0"
+    >
+      <!--Combined Profile and Duration Section-->
+      <div class="rounded-md overflow-hidden flex flex-col">
+        <!--Profile Section-->
         <div
-          class="flex flex-row md:flex-col items-center rounded-md bg-blue px-4 md:px-0 py-4"
+          class="bg-blue p-4 flex rounded-md items-center md:items-start flex-row md:flex-col"
         >
-          <img
-            src="/images/image-jeremy.png"
-            alt="Jeremy's Icon"
-            class="w-1/2 pr-3"
-          />
-          <div>
-            <p>Report for</p>
-            <h1>Jeremy Robson</h1>
+          <div class="mb-4 pr-4 nd:pr-0">
+            <img
+              src="/images/image-jeremy.png"
+              alt="Jeremy Robson"
+              class="w-24 h-24 rounded-full"
+            />
+          </div>
+          <div class="py-10">
+            <p class="text-desaturatedBlue font-Rubik">Report for</p>
+            <h1 class="text-white text-2xl font-bold font-Rubik">
+              Jeremy Robson
+            </h1>
           </div>
         </div>
+        <!--Duration Section-->
         <div
-          class="flex justify-between rounded-b-lg flex-row md:flex-col bg-darkBlue py-4 px-4"
+          class="bg-darkBlue p-4 flex justify-between md:flex-col text-center md:items-start rounded-b-md text-white"
         >
-          <p>Daily</p>
-          <p>Weekly</p>
-          <p>Monthly</p>
+          <p
+            class="cursor-pointer font-Rubik text-desaturatedBlue hover:text-white"
+          >
+            Daily
+          </p>
+          <p
+            class="cursor-pointer font-Rubik md:py-2 text-desaturatedBlue hover:text-white"
+          >
+            Weekly
+          </p>
+          <p
+            class="cursor-pointer font-Rubik text-desaturatedBlue hover:text-white"
+          >
+            Monthly
+          </p>
         </div>
       </div>
 
-      <!--Report-->
-      <div class="grid grid-rows-6 md:grid-cols-3 md:ml-4 mt-4"></div>
+      <!--Work Grid-->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+        <div class="relative bg-darkBlue rounded-md overflow-hidden">
+          <div
+            class="absolute top-0 left-0 w-full h-8 bg-lightRedWork rounded-t-md"
+          ></div>
+
+          <div class="relative p-4 mt-8">
+            <div class="flex justify-between items-center">
+              <p class="text-white font-Rubik">Work</p>
+              <img
+                src="/images/icon-ellipsis.svg"
+                alt="icon-ellipsis"
+                class="w-1/6 h-1/6"
+              />
+            </div>
+            <div class="details flex-col md:flex-row">
+              <h2 class="text-white py-2 font-Rubik">32 Hours</h2>
+              <p class="text-desaturatedBlue font-Rubik">
+                Last week - 36 hours
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--Play items-->
+        <div class="relative bg-darkBlue rounded-md overflow-hidden">
+          <div
+            class="absolute top-0 left-0 w-full h-8 bg-softBlue rounded-t-md"
+          ></div>
+
+          <div class="relative p-4 mt-8">
+            <div class="flex justify-between items-center">
+              <p class="text-white font-Rubik">Play</p>
+              <img
+                src="/images/icon-ellipsis.svg"
+                alt="icon-ellipsis"
+                class="w-1/6 h-1/6"
+              />
+            </div>
+            <div class="details flex-col md:flex-row">
+              <h2 class="text-white py-2 font-Rubik">10 Hours</h2>
+              <p class="text-desaturatedBlue font-Rubik">Last week - 8 hours</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Study Items-->
+        <div class="relative bg-darkBlue rounded-md overflow-hidden">
+          <div
+            class="absolute top-0 left-0 w-full h-8 bg-lightRed rounded-t-md"
+          ></div>
+
+          <div class="relative p-4 mt-8">
+            <div class="flex justify-between">
+              <p class="text-white font-Rubik">Study</p>
+              <img
+                src="/images/icon-ellipsis.svg"
+                alt="icon-ellipsis"
+                class="w-1/6 h-1/6"
+              />
+            </div>
+            <div class="details flex-col md:flex-row">
+              <h2 class="text-white py-2 font-Rubik">4 Hours</h2>
+              <p class="text-desaturatedBlue font-Rubik">Last week - 7 hours</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Exercise Items-->
+        <div class="relative bg-darkBlue rounded-md overflow-hidden">
+          <div
+            class="absolute top-0 left-0 w-full h-8 bg-limeGreen rounded-t-md"
+          ></div>
+
+          <div class="relative p-4 mt-8">
+            <div class="flex justify-between items-center">
+              <p class="text-white font-Rubik">Exercise</p>
+              <img
+                src="/images/icon-ellipsis.svg"
+                alt="icon-ellipsis"
+                class="w-1/6 h-1/6"
+              />
+            </div>
+            <div class="details flex-col md:flex-row">
+              <h2 class="text-white py-2 font-Rubik">4 Hours</h2>
+              <p class="text-desaturatedBlue font-Rubik">Last week - 5 hours</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Social Items-->
+        <div class="relative bg-darkBlue rounded-md overflow-hidden">
+          <div
+            class="absolute top-0 left-0 w-full h-8 bg-violet rounded-t-md"
+          ></div>
+
+          <div class="relative p-4 mt-8">
+            <div class="flex justify-between items-center">
+              <p class="text-white font-Rubik">Work</p>
+              <img
+                src="/images/icon-ellipsis.svg"
+                alt="icon-ellipsis"
+                class="w-1/6 h-1/6"
+              />
+            </div>
+            <div class="details flex-col md:flex-row">
+              <h2 class="text-white py-2 font-Rubik">5 Hours</h2>
+              <p class="text-desaturatedBlue font-Rubik">
+                Last week - 10 hours
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--Self care Items-->
+        <div class="relative bg-darkBlue rounded-md overflow-hidden">
+          <div
+            class="absolute top-0 left-0 w-full h-8 bg-softOrange rounded-t-md"
+          ></div>
+
+          <div class="relative p-4 mt-8">
+            <div class="flex justify-between items-center">
+              <p class="text-white font-Rubik">Self Care</p>
+              <img
+                src="/images/icon-ellipsis.svg"
+                alt="icon-ellipsis"
+                class="w-1/6 h-1/6"
+              />
+            </div>
+            <div class="details flex-col md:flex-row">
+              <h2 class="text-white py-2 font-Rubik">2 Hours</h2>
+              <p class="text-desaturatedBlue font-Rubik">Last week - 2 hours</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
