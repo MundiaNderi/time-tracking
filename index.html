@@ -12,13 +12,9 @@
     <link href="/src/output.css" rel="stylesheet" />
     <title>Time Tracking Dashboard</title>
   </head>
-  <body
-    class="flex items-center min-h-screen border border-green-500 justify-center"
-  >
+  <body class="flex items-center min-h-screen justify-center">
     <!--Main Container-->
-    <div
-      class="flex flex-col md:flex-row justify-center border border-red-500 gap-8 my-16 md:my-0"
-    >
+    <div class="flex flex-col md:flex-row justify-center gap-8 my-16 md:my-0">
       <!--Combined Profile and Duration Section-->
       <div class="rounded-md overflow-hidden flex flex-col">
         <!--Profile Section-->
@@ -65,10 +61,10 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
         <div class="relative bg-darkBlue rounded-md overflow-hidden">
           <div
-            class="absolute top-0 left-0 w-full h-8 bg-lightRedWork rounded-t-md"
+            class="work absolute top-0 left-0 w-full h-8 bg-lightRedWork rounded-t-md"
           ></div>
 
-          <div class="relative p-4 mt-8">
+          <div class="relative p-4 rounded-t-full mt-8">
             <div class="flex justify-between items-center">
               <p class="text-white font-Rubik">Work</p>
               <img
@@ -89,7 +85,7 @@
         <!--Play items-->
         <div class="relative bg-darkBlue rounded-md overflow-hidden">
           <div
-            class="absolute top-0 left-0 w-full h-8 bg-softBlue rounded-t-md"
+            class="play absolute top-0 left-0 w-full h-8 bg-softBlue rounded-t-md"
           ></div>
 
           <div class="relative p-4 mt-8">
@@ -111,7 +107,7 @@
         <!--Study Items-->
         <div class="relative bg-darkBlue rounded-md overflow-hidden">
           <div
-            class="absolute top-0 left-0 w-full h-8 bg-lightRed rounded-t-md"
+            class="study absolute top-0 left-0 w-full h-8 bg-lightRed rounded-t-md"
           ></div>
 
           <div class="relative p-4 mt-8">
@@ -133,7 +129,7 @@
         <!--Exercise Items-->
         <div class="relative bg-darkBlue rounded-md overflow-hidden">
           <div
-            class="absolute top-0 left-0 w-full h-8 bg-limeGreen rounded-t-md"
+            class="exercise absolute top-0 left-0 w-full h-8 bg-limeGreen rounded-t-md"
           ></div>
 
           <div class="relative p-4 mt-8">
@@ -155,7 +151,7 @@
         <!--Social Items-->
         <div class="relative bg-darkBlue rounded-md overflow-hidden">
           <div
-            class="absolute top-0 left-0 w-full h-8 bg-violet rounded-t-md"
+            class="social absolute top-0 left-0 w-full h-8 bg-violet rounded-t-md"
           ></div>
 
           <div class="relative p-4 mt-8">
@@ -179,10 +175,10 @@
         <!--Self care Items-->
         <div class="relative bg-darkBlue rounded-md overflow-hidden">
           <div
-            class="absolute top-0 left-0 w-full h-8 bg-softOrange rounded-t-md"
+            class="self absolute top-0 left-0 w-full h-8 bg-softOrange rounded-t-md"
           ></div>
 
-          <div class="relative p-4 mt-8">
+          <div class="relative p-4 mt-8 rounded">
             <div class="flex justify-between items-center">
               <p class="text-white font-Rubik">Self Care</p>
               <img
