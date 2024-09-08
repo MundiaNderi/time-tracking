@@ -1,6 +1,6 @@
-# Frontend Mentor - Blog preview card
+# Frontend Mentor - Time Tracking Dashboard
 
-![Design preview for the Blog preview card coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Time Tracking Dashboard coding challenge](./design/desktop-preview.jpg)
 
 ## The challenge
 
