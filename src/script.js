@@ -8,6 +8,13 @@ fetch("./data.json")
         const monthlyBtn = document.getElementById("monthly");
         const contentGrid = document.getElementById("content-grid");
 
+        // Timeframe mapping
+        const timeframeLabels = {
+            daily: "Daily Record",
+            weekly: "Week",
+            monthly: "Month"
+        };
+
         // Function to update content based on timeframe
         function updateContent(timeframe) {
             // Clear existing content
@@ -41,14 +48,14 @@ fetch("./data.json")
                 const contentBlock = `
                     <div class="relative bg-darkBlue rounded-md overflow-hidden">
                         <div class="absolute ${titleClass} ${backgroundClass} top-0 left-0 w-full h-8 rounded-t-md"></div>
-                        <div class="relative p-4 cursor-pointer  hover:bg-desaturatedBlue mt-8">
+                        <div class="relative p-4 cursor-pointer hover:bg-desaturatedBlue mt-8">
                             <div class="flex justify-between items-center">
                                 <p class="text-white font-Rubik">${title}</p>
                                 <img src="/images/icon-ellipsis.svg" alt="icon-ellipsis" class="w-1/6 cursor-pointer h-1/6" />
                             </div>
                             <div class="details flex-col md:flex-row">
                                 <h2 class="text-white py-2 font-Rubik">${currentHours} Hours</h2>
-                                <p class="text-desaturatedBlue hover:text-white font-Rubik">Last ${timeframe} - ${previousHours} hours</p>
+                                <p class="text-desaturatedBlue hover:text-white font-Rubik">Last ${timeframeLabels[timeframe]} - ${previousHours} hours</p>
                             </div>
                         </div>
                     </div>
