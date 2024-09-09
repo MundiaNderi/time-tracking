@@ -46,20 +46,21 @@ fetch("./data.json")
 
                 // Create new content block for each category
                 const contentBlock = `
-                    <div class="relative bg-darkBlue rounded-md overflow-hidden">
-                        <div class="absolute ${titleClass} ${backgroundClass} top-0 left-0 w-full h-8 rounded-t-md"></div>
-                        <div class="relative p-4 cursor-pointer hover:bg-desaturatedBlue mt-8">
-                            <div class="flex justify-between items-center">
-                                <p class="text-white font-Rubik">${title}</p>
-                                <img src="/images/icon-ellipsis.svg" alt="icon-ellipsis" class="w-1/6 cursor-pointer h-1/6" />
-                            </div>
-                            <div class="details flex-col md:flex-row">
-                                <h2 class="text-white py-2 font-Rubik">${currentHours} Hours</h2>
-                                <p class="text-desaturatedBlue hover:text-white font-Rubik">Last ${timeframeLabels[timeframe]} - ${previousHours} hours</p>
-                            </div>
-                        </div>
-                    </div>
-                `;
+    <div class="relative bg-darkBlue rounded-md overflow-hidden">
+        <div class="absolute ${titleClass} ${backgroundClass} top-0 left-0 w-full h-8 rounded-t-md"></div>
+        <div class="relative p-4 cursor-pointer hover:bg-paleBlue mt-8">
+            <div class="flex justify-between items-center">
+                <p class="text-white font-Rubik">${title}</p>
+                <img src="/images/icon-ellipsis.svg" alt="icon-ellipsis" class="w-1/6 cursor-pointer h-1/6" />
+            </div>
+            <div class="details flex-col md:flex-row pt-2" ;">
+                <h1 class="text-white text-3xl py-2 font-Rubik" style="font-size: 48px;">${currentHours} Hours</h1>
+                <p class="text-desaturatedBlue font-Rubik">Last ${timeframeLabels[timeframe]} - ${previousHours} hours</p>
+            </div>
+        </div>
+    </div>
+`;
+
 
                 // Add content to the grid
                 contentGrid.innerHTML += contentBlock;
